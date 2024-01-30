@@ -90,12 +90,12 @@ public class CommandListener implements CommandExecutor, TabCompleter {
             case "!":
             case "name":
                 if (!sender.hasPermission("rainbowedit.name")) {
-                    sender.sendMessage("§7[§b彩虹工具§7] 您没有执行此命令的权限");
+                    sender.sendMessage("§7[§b彩虹编辑§7] 您没有执行此命令的权限");
                     return true;
                 }
 
                 if (args.length < 2) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 缺少必要参数: <String>");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 缺少必要参数: <String>");
                     return true;
                 }
 
@@ -107,12 +107,12 @@ public class CommandListener implements CommandExecutor, TabCompleter {
             case "+":
             case "add":
                 if (!sender.hasPermission("rainbowedit.lore")) {
-                    sender.sendMessage("§7[§b彩虹工具§7] 您没有执行此命令的权限");
+                    sender.sendMessage("§7[§b彩虹编辑§7] 您没有执行此命令的权限");
                     return true;
                 }
 
                 if (args.length < 2) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 缺少必要参数: <String>");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 缺少必要参数: <String>");
                     return true;
                 }
 
@@ -123,17 +123,17 @@ public class CommandListener implements CommandExecutor, TabCompleter {
             case "@":
             case "set":
                 if (!sender.hasPermission("rainbowedit.lore")) {
-                    sender.sendMessage("§7[§b彩虹工具§7] 您没有执行此命令的权限");
+                    sender.sendMessage("§7[§b彩虹编辑§7] 您没有执行此命令的权限");
                     return true;
                 }
 
                 if (args.length < 2) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 缺少必要参数: <String>");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 缺少必要参数: <String>");
                     return true;
                 }
 
                 if (args.length < 3) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 缺少必要参数: <line>");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 缺少必要参数: <line>");
                     return true;
                 }
 
@@ -141,7 +141,7 @@ public class CommandListener implements CommandExecutor, TabCompleter {
                 try {
                     lineToSet = Integer.parseInt(args[1]);
                 } catch (NumberFormatException e) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 参数 " + args[1] + " 不是数字");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 参数 " + args[1] + " 不是数字");
                     return true;
                 }
 
@@ -154,17 +154,17 @@ public class CommandListener implements CommandExecutor, TabCompleter {
             case "<":    
             case "after":
                 if (!sender.hasPermission("rainbowedit.lore")) {
-                    sender.sendMessage("§7[§b彩虹工具§7] 您没有执行此命令的权限");
+                    sender.sendMessage("§7[§b彩虹编辑§7] 您没有执行此命令的权限");
                     return true;
                 }
 
                 if (args.length < 2) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 缺少必要参数: <line>");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 缺少必要参数: <line>");
                     return true;
                 }
 
                 if (args.length < 3) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 缺少必要参数: <String>");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 缺少必要参数: <String>");
                     return true;
                 }
 
@@ -172,7 +172,7 @@ public class CommandListener implements CommandExecutor, TabCompleter {
                 try {
                     line = Integer.parseInt(args[1]);
                 } catch (NumberFormatException e) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 参数 " + args[1] + " 不是数字");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 参数 " + args[1] + " 不是数字");
                     return true;
                 }
 
@@ -187,21 +187,21 @@ public class CommandListener implements CommandExecutor, TabCompleter {
             case "#":
             case "replace":
                 if (!sender.hasPermission("rainbowedit.lore")) {
-                    sender.sendMessage("§7[§b彩虹工具§7] 您没有执行此命令的权限");
+                    sender.sendMessage("§7[§b彩虹编辑§7] 您没有执行此命令的权限");
                     return true;
                 }
 
                 if (args.length < 2) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 缺少必要参数: <line>");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 缺少必要参数: <line>");
                     return true;
                 }
 
                 if (args.length < 3) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 缺少必要参数: <oldString> <newString>");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 缺少必要参数: <oldString> <newString>");
                     return true;
                 }
                 if (args.length < 4) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 缺少必要参数: <newString>");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 缺少必要参数: <newString>");
                     return true;
                 }
 
@@ -209,7 +209,7 @@ public class CommandListener implements CommandExecutor, TabCompleter {
                 try {
                     lineToReplace = Integer.parseInt(args[1]);
                 } catch (NumberFormatException e) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 参数 " + args[1] + " 不是数字");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 参数 " + args[1] + " 不是数字");
                     return true;
                 }
 
@@ -221,12 +221,12 @@ public class CommandListener implements CommandExecutor, TabCompleter {
             case "-":
             case "remove":
                 if (!sender.hasPermission("rainbowedit.lore")) {
-                    sender.sendMessage("§7[§b彩虹工具§7] 您没有执行此命令的权限");
+                    sender.sendMessage("§7[§b彩虹编辑§7] 您没有执行此命令的权限");
                     return true;
                 }
 
                 if (args.length < 2) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 缺少必要参数: <line>");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 缺少必要参数: <line>");
                     return true;
                 }
 
@@ -234,7 +234,7 @@ public class CommandListener implements CommandExecutor, TabCompleter {
                 try {
                     lineToRemove = Integer.parseInt(args[1]);
                 } catch (NumberFormatException e) {
-                    player.sendMessage("§7[§b插件名字§7] 错误, 参数 " + args[1] + " 不是数字");
+                    player.sendMessage("§7[§b彩虹编辑§7] 错误, 参数 " + args[1] + " 不是数字");
                     return true;
                 }
 
@@ -244,7 +244,7 @@ public class CommandListener implements CommandExecutor, TabCompleter {
             case "%":
             case "clear":
                 if (!sender.hasPermission("rainbowedit.lore")) {
-                    sender.sendMessage("§7[§b彩虹工具§7] 您没有执行此命令的权限");
+                    sender.sendMessage("§7[§b彩虹编辑§7] 您没有执行此命令的权限");
                     return true;
                 }
 
@@ -254,7 +254,7 @@ public class CommandListener implements CommandExecutor, TabCompleter {
             case "$":
             case "preview":
                 if (!sender.hasPermission("rainbowedit.lore")) {
-                    sender.sendMessage("§7[§b彩虹工具§7] 您没有执行此命令的权限");
+                    sender.sendMessage("§7[§b彩虹编辑§7] 您没有执行此命令的权限");
                     return true;
                 }
 
@@ -264,7 +264,7 @@ public class CommandListener implements CommandExecutor, TabCompleter {
             case ".":
             case "apply":
                 if (!sender.hasPermission("rainbowedit.lore")) {
-                    sender.sendMessage("§7[§b彩虹工具§7] 您没有执行此命令的权限");
+                    sender.sendMessage("§7[§b彩虹编辑§7] 您没有执行此命令的权限");
                     return true;
                 }
 
@@ -278,7 +278,7 @@ public class CommandListener implements CommandExecutor, TabCompleter {
             case ":":
             case "cancel":
                 if (!sender.hasPermission("rainbowedit.lore")) {
-                    sender.sendMessage("§7[§b彩虹工具§7] 您没有执行此命令的权限");
+                    sender.sendMessage("§7[§b彩虹编辑§7] 您没有执行此命令的权限");
                     return true;
                 }
 
@@ -292,12 +292,12 @@ public class CommandListener implements CommandExecutor, TabCompleter {
             case ",":
             case "reload":
                 if (!sender.hasPermission("rainbowedit.reload")) {
-                    sender.sendMessage("§7[§b彩虹工具§7] 您没有执行此命令的权限");
+                    sender.sendMessage("§7[§b彩虹编辑§7] 您没有执行此命令的权限");
                     return true;
                 }
 
                 fileManager.reloadConfig();
-                sender.sendMessage("§7[§b彩虹工具§7] 配置文件已重新加载");
+                sender.sendMessage("§7[§b彩虹编辑§7] 配置文件已重新加载");
                 return true;
 
             case "?":
