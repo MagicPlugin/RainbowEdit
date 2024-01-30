@@ -1,0 +1,27 @@
+name: RainbowEdit
+main: com.magicpowered.rainbowseries.RainbowEdit
+version: 24.0.1.1
+author: JLING
+api-version: 1.13
+
+commands:
+  re:
+    description: <name/~/add/+/set/@/before/>/after/</replace/#/preview/$/apply/./cancel/!/remove/-/clear/%>
+    usage: /<command> <name/~/add/+/set/@/before/>/after/</replace/#/preview/$/apply/./cancel/!/remove/-/clear/%>
+    aliases:
+      - rainbowedit
+      - rainbowe
+      - redit
+      - re
+    tab-completions: com.magicpowered.rainbowedit.CommandListener
+
+permissions:
+  rainbowedit.use.name:
+    description: 修改名称
+    default: op
+  rainbowedit.use.lore:
+    description: 修改描述
+    default: op
+  rainbowedit.reload:
+    description: 重载插件
+    default: op
